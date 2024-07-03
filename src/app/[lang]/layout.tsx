@@ -8,12 +8,14 @@ export async function generateStaticParams() {
 }
  
 export default function Root({ children, params } : any) {
+  console.log("nitu",params);
   return (
     <html lang={params.lang}>
       <body><LocaleSwitcher></LocaleSwitcher>
 
-<TopNavbar></TopNavbar>
-{children}</body>
+        <TopNavbar lang={params.lang}></TopNavbar>
+        {children}
+      </body>
     </html>
   )
 }
