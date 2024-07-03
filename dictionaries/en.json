@@ -1,0 +1,12 @@
+{
+    "products": {
+      "cart": "Hello World"
+    },
+    "about": {
+      "header": "About"
+    },
+    "blog": {
+      "header": "Blog"
+    }
+
+  }
